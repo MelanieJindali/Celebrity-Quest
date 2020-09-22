@@ -1,11 +1,75 @@
-/* Fonts to use - 
-font-family: 'Abril Fatface', cursive; // Main Header 
-font-family: 'Raleway', sans-serif; // Subheaders/body paragraphs */
-
-body {
-	/* background-image: url("../images/more-leaves.png");
-	width: 100%; */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
+
+/* Custom properties */
+:root {
+  --ff-main: 'Raleway', sans-serif;
+  --ff-header: 'Abril Fatface', cursive;
+
+  --fw-reg: 400;
+  --fw-bold: 700;
+
+  --clr-light: #e9fffd;
+  --clr-dark: #2e4a53;
+  --clr-accent: #26a69a;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2rem;
+	--fs-h3: 1.25rem;
+	--fs-body: 1rem;
+
+  --shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+		0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 600px) {
+	:root {
+		--fs-h1: 4.5rem;
+		--fs-h2: 3.75rem;
+		--fs-h3: 1.5rem;
+		--fs-body: 1.125rem;
+	}
+}
+
+/* General styling */
+body {
+	background-image: url("../images/more-leaves.png");
+  width: 100%;
+  margin: 0;
+  font-family: var(--ff-main);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-family: var(--ff-header);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+}
+
+/* Header */
+
+/* Search section */
 
 .input-field {
   width: 100%;
@@ -20,6 +84,7 @@ body {
 .columns {
   display: flex;  
   margin: 0 auto;
+  padding: 5em 2em;
 }
 
 .col {
