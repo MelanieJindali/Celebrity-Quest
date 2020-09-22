@@ -37,12 +37,11 @@
 						<div class="row">
 							<div class="col">
 								<div class="card-panel" id="history">
-									<h2 id="card-header">
+									<h3 id="card-header">
 										Other celebrities who have recently been
 										searched for:
-									</h2>
-									<span id="history" class="white-text">
-									</span>
+									</h3>
+									<span id="history" class="white-text"></span>
 								</div>
 							</div>
 						</div>
@@ -58,12 +57,7 @@
 								<label class="label-icon" for="search"></label>
 							</div>
 
-							<button
-								class="btn waves-effect waves-light"
-								id="submit"
-								type="submit"
-								name="action"
-							>
+							<button class="btn waves-effect waves-light" id="submit" type="submit" name="action">
 								Submit
 								<i class="material-icons right">send</i>
 							</button>
@@ -88,9 +82,9 @@
 				</div>
 			</div>
 
-			<div class="columns" id="vid-gif">
+			<div class="columns" class="vid"  id="vid-gif">
 				<div class="col" id="yt-section">
-					<h3 class="mainHeader">Youtube Videos</h3>
+					<h2>Youtube Videos</h2>
 					<div id="youtube">
 						<h3 id="vidTitle"></h3>
 						<iframe
@@ -103,12 +97,13 @@
 					</div>
 				</div>
 
-				<div class="col" id="gif-section">
-					<h3>Gifs</h3>
+				<div class="col" class="gif" id="gif-section">
+					<h2>Gifs</h2>
 					<div id="giphy"></div>
 				</div>
 			</div>
-		</div>
+    </div>
+    
 		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
