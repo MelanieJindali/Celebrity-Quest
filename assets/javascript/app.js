@@ -16,10 +16,10 @@ var config = {
     var userInput = ""
     
     //hide gif section on document load
-    $("#gif-section").hide()
+    // $("#gif-section").hide()
 
     // Hide Youtube section
-    $("#yt-section").hide()
+    // $("#yt-section").hide()
 
 // On click
 $(".btn").on("click", function(event) {
