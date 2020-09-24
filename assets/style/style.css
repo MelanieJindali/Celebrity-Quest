@@ -12,6 +12,7 @@
   --fw-reg: 400;
   --fw-bold: 700;
 
+  --clr-darkgray: #3f3f3f;
   --clr-light: #e9fffd;
   --clr-dark: #2e4a53;
   --clr-accent: #26a69a;
@@ -36,7 +37,6 @@
 
 /* General styling */
 body {
-	background-image: url("../images/more-leaves.png");
   width: 100%;
   margin: 0;
   font-family: var(--ff-main);
@@ -79,13 +79,39 @@ h3 {
   text-align: center;
 }
 
-/* Search section */
-
-.input-field {
-  width: 100%;
-  max-width: 600px;
+/* Top-Search section */
+.top-section p {
   margin: 0 auto;
 }
+
+.top-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 2em 3em;
+}
+
+.card-panel {
+  width: 100%;
+  max-width: 200px;
+  margin-left: calc(5px + 1em);
+}
+
+.history-header {
+  font-weight: var(--fw-bold);
+  color: var(--clr-darkgray);
+  padding-bottom: 1em;
+}
+
+.subheader {
+  color: var(--clr-dark);
+  margin-bottom: 1em;
+}
+
+.search {
+  width: 100%;
+}
+
 
 .news {
   margin: 0 auto;
