@@ -14,10 +14,14 @@ Ever wondered what certain celebrities are up to nowadays? With Celebrity Quest,
 * Firebase Realtime Database (https://firebase.google.com/products/realtime-database)
 * Materialize CSS Framework (https://materializecss.com/)
 
-### Wireframe:
-<img src="Wireframe/Wireframe-2.png"
-     alt="Wireframe Image"
-     style="float: left; margin-right: 10px;" />
+### To start...
+Type out a celebrity's name into the input field
+![Celebrity Quest](./assets/images/CQ1.PNG)
+
+### Results...
+You will receive 3 news articles, 3 YouTube videos and some GIFs.
+![Celebrity Quest](./assets/images/CQ2.PNG)
+![Celebrity Quest](./assets/images/CQ3.PNG)
 
 Check out Celebrity Quest [here!](https://melaniejindali.github.io/Celebrity-Quest/)
       
