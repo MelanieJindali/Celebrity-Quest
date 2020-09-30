@@ -36,7 +36,7 @@ $(".btn").on("click", function(event) {
     })
 
     //clear the search bar after the button is clicked
-    $("#search").val(" ")
+    $("#search").val("")
 
     //calls the functions for each api
     displayGifs(userInput)
