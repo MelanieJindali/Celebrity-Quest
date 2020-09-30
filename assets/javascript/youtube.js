@@ -21,9 +21,6 @@ function videos(celebrity) {
         q: celebrity
       }
     }).then(function(response) {
-      console.log(response)
-            
-    
 
       for (var i = 0; i < response.items.length; i++) {
 
