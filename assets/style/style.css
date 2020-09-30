@@ -157,7 +157,11 @@ h3 {
 }
 
 #vidTitle {
-    margin: 3em 0 1em 0;
+    margin: 0em 0 1em 0;
+}
+
+#desc {
+    padding-bottom: 2em;
 }
 
 .gif {
