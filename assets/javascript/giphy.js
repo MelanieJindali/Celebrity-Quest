@@ -8,13 +8,12 @@ function displayGifs(actor){
 
 // var topic = $(this).attr("data-name");
 
-var giphyQueryURL = "https://api.giphy.com/v1/gifs/search?q=" + actor + "&api_key=a4LGOXb9Mib8LjW2K5iuZwlrktAX8mI2&limit=4";
+var giphyQueryURL = "https://api.giphy.com/v1/gifs/search?q=" + actor + "&api_key=a4LGOXb9Mib8LjW2K5iuZwlrktAX8mI2&limit=30";
 
 $.ajax({
     url: giphyQueryURL,
     method: "GET"
 }).then(function(response){
-    console.log(response)
 
 
     for (var i = 0; i < response.data.length; i++) {
