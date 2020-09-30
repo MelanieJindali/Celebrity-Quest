@@ -14,12 +14,18 @@ var config = {
     var database = firebase.database();
 
     var userInput = ""
+
+    // Hide Celeb's name
+    $("#actor-name").hide()
     
     //hide gif section on document load
-    // $("#gif-section").hide()
+    $("#gif-section").hide()
 
     // Hide Youtube section
-    // $("#yt-section").hide()
+    $("#yt-section").hide()
+
+    // Hide news section
+    $("#news-articles").hide()
 
 // On click
 $(".btn").on("click", function(event) {
