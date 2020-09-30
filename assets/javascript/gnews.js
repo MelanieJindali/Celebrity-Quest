@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 function displayArticles(celebrity) {
 
-  var queryUrl = `https://gnews.io/api/v4/search?q=${celebrity}&token=83f5e784408070fb58bc521846521f8c`;
+  var queryUrl = `https://gnews.io/api/v4/search?q=${celebrity}&lang=en&token=83f5e784408070fb58bc521846521f8c`;
 
 
     $.ajax({
