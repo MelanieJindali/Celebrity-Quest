@@ -22,8 +22,8 @@
 	--fs-h3: 1.25rem;
 	--fs-body: 1rem;
 
-	--shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.3),
-		0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+	--shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.2),
+	0.125em 0.125em 0.25em rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 600px) {
@@ -45,7 +45,7 @@ body {
 	overflow-x: hidden;
 }
 
-img {
+.gif img {
 	width: 200px;
 }
 
@@ -133,52 +133,84 @@ h3 {
 	}
 }
 
+/* Celeb name */
+#actor-name {
+    text-align: center;
+    color: var(--clr-dark);
+    background: var(--clr-light);
+    padding: .5em;
+}
+
 /* Results */
-#articles {
-	text-align: center;
+.results {
+    padding: 3em 2em;
+    margin: 0 auto;
+}
+
+.articleHead a {
+    color: var(--clr-accent);
+}
+
+.articleImg {
+    max-width: 20em;
+    padding: 1.5em 0;
+}
+
+#vidTitle {
+    margin: 3em 0 1em 0;
 }
 
 .gif {
-	text-align: center;
-	max-width: 100%;
+    text-align: center;
+    margin: .2em;
+    /* max-width: 500px; */
 }
 
 .vid h2,
 .gif h2,
 .news h2 {
-	background: var(--clr-light);
 	padding: 0.25em 1em;
 	text-align: center;
-	margin-top: 0;
+    margin-top: 0;
+    color: var(--clr-dark);
+    font-weight: var(--fw-bold);
+    margin-bottom: 1em;
 }
 
 .section {
-    background-color: var(--clr-dark);
     text-align: center;
 }
 
 .columns {
 	display: flex;
-	justify-content: space-evenly;
+    justify-content: space-evenly;
+    /* width: 100%; */
 }
 
 .col {
-	flex-direction: column;
+    flex-direction: column;
+    background: white;
+    border-radius: 15px;
+    padding: 1.5em;
+    box-shadow: var(--shadow);
 }
 
 .col + .col {
-	margin-left: 1em;
+	margin-left: 2em;
 }
 
 @media (max-width: 1060px) {
 	.columns {
 		display: flex;
-		flex-direction: column;
-	}
-	.col + .col {
-		margin: 0;
-	}
+        flex-direction: column;
+    }
+    .col + .col {
+        margin-left: 0;
+    }
 	.col {
-        padding: .5em 3em;
-	}
+        margin: 1.3em 0;
+    }
+    .gif {
+        max-width: 100%;
+    }
 }
