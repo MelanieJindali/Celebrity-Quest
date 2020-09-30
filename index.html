@@ -3,13 +3,22 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-		<link	href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@400;700;800&display=swap" rel="stylesheet"/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@400;700;800&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="assets/style/style.css" />
 		<title>Celebrity Quest!</title>
-  </head>
-  
+	</head>
+
 	<body>
 		<div class="nav">
 			<h1 class="header" id="header">Celebrity Quest</h1>
@@ -17,67 +26,80 @@
 
 		<div id="main-content">
 			<div class="top-section" id="top-section">
-					<div id="search-bar">
-						<div class="search-input col">
-							<div class="search">
-                <h3 class="subheader">
-						      Find out more about a celebrity who piques your interest!
-				      	</h3>
-								<input class="input-field" id="search" type="search" placeholder="Enter a celebrity's name..." required/>
-								<label class="label-icon" for="search"></label>
-							</div>
+				<div id="search-bar">
+					<div class="search-input">
+						<div class="search">
+							<h3 class="subheader">
+								Find out more about a celebrity who piques your
+								interest!
+							</h3>
+							<input
+								class="input-field"
+								id="search"
+								type="search"
+								placeholder="Enter a celebrity's name..."
+								required
+							/>
+							<label class="label-icon" for="search"></label>
+						</div>
 
-							<button class="btn waves-effect waves-light" id="submit" type="submit" name="action">
-								Submit
-              </button>	
-              </div>
-            </div>
-            <div class="card-panel col" id="history">
-              <p class="history-header" id="card-header">
-                Others have also searched for:
-              </p>
-                <span id="history" class=""></span>  
-            </div>
-			</div>
-
-			<div id="name-image">
-				<h1 id="actor-name"></h1>
-				<img id="actor-img" src="" alt="" />
-			</div>
-
-			<div class="news" id="news-articles">
-				<!--<div id="news">-->
-				<h2 id="news">Latest News</h2>
-				<!--</div>-->
-				  <div id="articles">
-					<div id="article1"></div>
-					<div id="article2"></div>
-					<div id="article3"></div>
-				</div>
-			</div>
-
-			<div class="columns" class="vid"  id="vid-gif">
-				<div class="col" id="yt-section">
-					<h2>Youtube Videos</h2>
-					<div id="youtube">
-						<h3 id="vidTitle"></h3>
-						<iframe
-							id="vidPlayer"
-							frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
-						<p id="desc"></p>
+						<button
+							class="btn waves-effect waves-light"
+							id="submit"
+							type="submit"
+							name="action"
+						>
+							Submit
+						</button>
 					</div>
 				</div>
-
-				<div class="col" class="gif" id="gif-section">
-					<h2>Gifs</h2>
-					<div id="giphy"></div>
+				<div class="card-panel" id="history">
+					<p class="history-header" id="card-header">
+						Others have also searched for:
+					</p>
+					<span id="history" class=""></span>
 				</div>
 			</div>
-    </div>
-    
+
+			<div>
+				<h1 id="actor-name"></h1>
+			</div>
+
+			<div class="results">
+				<!-- News, Videos and GIFs-->
+				<div class="columns news" id="vid-gif">
+					<div class="col" id="news-articles">
+						<h2 id="news">Latest News</h2>
+						<div class="section" id="articles">
+							<div id="article1">some article</div>
+							<div id="article2"></div>
+							<div id="article3"></div>
+						</div>
+					</div>
+					<div class="col vid" id="yt-section">
+						<h2>Youtube Videos</h2>
+						<div class="section" id="youtube">
+							<h3 id="vidTitle"></h3>
+							<iframe
+								id="vidPlayer"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							></iframe>
+							<p id="desc"></p>
+						</div>
+					</div>
+
+					<div class="col gif" id="gif-section">
+						<h2>Gifs</h2>
+						<div class="section giphy" id="giphy">
+                            hi
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
