@@ -1,7 +1,7 @@
 $(document).ready(function(){
   // $("#news-articles").hide();
-  $("#articles").hide();
-  $("#name-image").hide();
+  // $("#articles").hide();
+  // $("#name-image").hide();
 })
 
 // 83f5e784408070fb58bc521846521f8c
@@ -16,13 +16,12 @@ function displayArticles(celebrity) {
       url: queryUrl,
       method: "GET"
     }).then (function(response){
-      console.log(response);
 
       var title1 = response.articles[0].title;
 
       var articleUrl1 = response.articles[0].url;
       var articleLink1 = $('<a href="' + articleUrl1 + '" target="_blank">' + title1 + '</a>');
-      var articleHead1 = $("<h2>");
+      var articleHead1 = $("<h3>");
 
       articleHead1.addClass("articleHead");
       $(articleHead1).append(articleLink1);
@@ -38,7 +37,7 @@ function displayArticles(celebrity) {
 
       var articleUrl2 = response.articles[1].url;
       var articleLink2 = $('<a href="' + articleUrl2 + '" target="_blank">' + title2 + '</a>');
-      var articleHead2 = $("<h2>");
+      var articleHead2 = $("<h3>");
       articleHead2.addClass("articleHead");
       $(articleHead2).append(articleLink2);
       $("#article2").append(articleHead2);
@@ -53,7 +52,7 @@ function displayArticles(celebrity) {
 
       var articleUrl3 = response.articles[2].url;
       var articleLink3 = $('<a href="' + articleUrl3 + '" target="_blank">' + title3 + '</a>');
-      var articleHead3 = $("<h2>");
+      var articleHead3 = $("<h3>");
       articleHead3.addClass("articleHead");
       $(articleHead3).append(articleLink3);
       $("#article3").append(articleHead3);
