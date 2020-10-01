@@ -16,7 +16,7 @@ var config = {
     var userInput = ""
 
     // Hide Celeb's name
-    $("#actor-name").hide()
+    $("#celeb-name").hide()
     
     //hide gif section on document load
     $("#gif-section").hide()
@@ -33,8 +33,8 @@ $(".btn").on("click", function(event) {
     userInput = $("#search").val().trim();
     $("#news-articles").show();
     $("#articles").show();
-    $("#name-image").show();
-    $("#yt-section").show()
+    $("#celeb-name").show();
+    $("#yt-section").show();
 
     database.ref().push({
         actor: userInput,
@@ -54,7 +54,7 @@ $(".btn").on("click", function(event) {
     $("#gif-section").show()
 
     actor = [];
-    $("#actor-name").text(userInput);
+    $("#celeb-name").text(userInput);
 })
 
 database.ref().limitToLast(3)

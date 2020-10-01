@@ -134,7 +134,7 @@ h3 {
 }
 
 /* Celeb name */
-#actor-name {
+#celeb-name {
     text-align: center;
     color: var(--clr-dark);
     background: var(--clr-light);
@@ -166,7 +166,9 @@ h3 {
 
 .gif {
     text-align: center;
+    padding: .2em;
 }
+
 
 .vid h2,
 .gif h2,
