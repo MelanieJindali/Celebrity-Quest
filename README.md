@@ -21,7 +21,6 @@ Type out a celebrity's name into the input field
 ### Results...
 You will receive 3 news articles, 3 YouTube videos and some GIFs.
 ![Celebrity Quest](./assets/images/CQ2.PNG)
-![Celebrity Quest](./assets/images/CQ3.PNG)
 
 Check out Celebrity Quest [here!](https://melaniejindali.github.io/Celebrity-Quest/)
       
